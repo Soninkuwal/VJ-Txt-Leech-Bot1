@@ -172,7 +172,9 @@ async def upload(bot: Client, m: Message):
              id = url.split("/")[-2]
              url = "https://d26g5bnklkwsh4.cloudfront.net/" + id + "/master.m3u8"
 
-            
+            elif 'brightcove' in url:
+             id = url.split("/")[-2]
+             url = "https://edge.api.brightcove.com" + id + "/master.m3u8?bcov_auth=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhY2NpZCI6IjYyMDY0NTkxMjMwMDEiLCJleHAiOjE3MzgwMjIzNTEsImlhdCI6MTczNzkzNTk1MSwiY29uaWQiOiI2MzU1NzU5ODQ4MTEyIiwibWF4aXAiOjEsInBybyI6ImFlczEyOCJ9"
 
             elif 'madxapi' in url:
              id = url.split("/")[-2]
