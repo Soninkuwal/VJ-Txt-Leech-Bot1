@@ -174,7 +174,7 @@ async def upload(bot: Client, m: Message):
 
             elif 'brightcove' in url:
              id = url.split("/")[-2]
-             url = "https://edge.api.brightcove.com" + id + "/master.m3u8?bcov_auth=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhY2NpZCI6IjYyMDY0NTkxMjMwMDEiLCJleHAiOjE3MzgwMjIzNTEsImlhdCI6MTczNzkzNTk1MSwiY29uaWQiOiI2MzU1NzU5ODQ4MTEyIiwibWF4aXAiOjEsInBybyI6ImFlczEyOCJ9"
+             url = "https://edge.api.brightcove.com" + id + "/master.m3u8?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhY2NpZCI6IjYyMDY0NTkxMjMwMDEiLCJleHAiOjE3MzgwMjIzNTEsImlhdCI6MTczNzkzNTk1MSwiY29uaWQiOiI2MzU1ODI0MjAxMTEyIiwibWF4aXAiOjEsInBybyI6ImFlczEyOCJ9.PQrQFsJKKgEMr9O7CtD-MVL_yRt7oGWDUm5ETJZytjoiDIB5rHJzpkC1QT1-9CojpYEcZdfo2jh19HsF_6iLq5pXcu38Gygu1vK9h4GTmFqdpGViBx-3RDmokc2ka9URwodKk4DRQyBue8oG69O91167yUBKpO97GGlwcJ-1TSG42Ox4v6jfhWEv301CLMMBxTpDlg2owhRHqMYZwH_oid-9gTEq-xIBTyR6Wgc6WCo4TCXII8ll5h-lxNyZKWu7echIH7-XPhz2jO6pFOG2nUtnf_kGk16I8oAdf5FskggYZKJWKeJ0C-kos2vLQCcw2KlxEYuBXEFRcO5T0HOICA"
 
             elif 'madxapi' in url:
              id = url.split("/")[-2]
