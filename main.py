@@ -276,8 +276,8 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
                 ytf = f"bestvideo[height<={raw_text2}]+bestaudio/best[height<={raw_text2}]"
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
            
-            elif "youtube.com" in url or "youtu.be" in url:
-                cmd = f'yt-dlp --cookies "{COOKIES_FILE_PATH}" -f "{ytf}" "{url}" -o "{name}.mp4"
+            #elif "youtube.com" in url or "youtu.be" in url:
+                #cmd = f'yt-dlp --cookies "{COOKIES_FILE_PATH}" -f "{ytf}" "{url}" -o "{name}.mp4"
                 
                 
             
