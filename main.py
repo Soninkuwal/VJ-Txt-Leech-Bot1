@@ -299,8 +299,8 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:❤️ @SONICKUWALSSCBOT ❤️** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}({res}) [Alex].mkv\n**🔗URL »**`{url}`**\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ https://sonickuwalssc.blogspot.com/ **'
-                cc1 = f'**[📁] Pdf_ID:❤️ @SONICKUWALSSCBOT ❤️** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR} [Alex].pdf\n**🔗URL »**`{url}`**\n\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ https://sonickuwalssc.blogspot.com/ **'
+                cc = f'**[📽️] Vid_ID:❤️ @SONICKUWALSSCBOT ❤️** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}({res}) [Alex].mkv**\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ https://sonickuwalssc.blogspot.com/ **'
+                cc1 = f'**[📁] Pdf_ID:❤️ @SONICKUWALSSCBOT ❤️** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR} [Alex].pdf**\n\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ https://sonickuwalssc.blogspot.com/ **'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
