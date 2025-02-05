@@ -33,3 +33,4 @@ asyncio
 youtube-dl
 m3u8
 pytube
+cloudscraper
