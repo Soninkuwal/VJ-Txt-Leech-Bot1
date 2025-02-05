@@ -260,9 +260,7 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
                 url = url.split("bcov_auth")[0]+bcov
 
 
-            if "jw-prod" in url:
-
-                cmd f'yt-dlpo "{name}.mp4" "{url}""
+            
 
                 
 
