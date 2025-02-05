@@ -62,8 +62,6 @@ ADMINS=123****
 API_HASH=6ab80*********
 API_ID=1283*****
 BOT_TOKEN=7961825980:AAFVhYEepRHTsRHeTfP*******
-LOG=-10023******
-OWNER=7841*****
 
 ```
 
