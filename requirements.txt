@@ -5,6 +5,7 @@ idna==3.4
 mutagen==1.46.0
 pyaes==1.6.1
 pycryptodome==3.18.0
+pyrogram
 pyromod==1.5
 PySocks==1.7.1
 python-dotenv==1.0.0
@@ -14,19 +15,6 @@ TgCrypto==1.2.5
 urllib3==2.0.3
 websockets==11.0.3
 yt-dlp==2023.6.22
-
-beautifulsoup4
-cloudscraper
-fastapi
-uvicorn
-youtube-dl
-mediainfo
-aria2
-pycurl
-m3u8
-bs4
-pytube
-
 motor
 aiohttp
 aiofiles
@@ -39,15 +27,9 @@ gunicorn==20.1.0
 Jinja2==3.0.3
 werkzeug==2.0.2
 itsdangerous==2.0.1
-ffprobe
 
 
-pyrogram==2.0.106
 asyncio
-humanize
-uvloop
-
-
-pyrogram
-umongo
-speedtest-cli
+youtube-dl
+m3u8
+pytube
