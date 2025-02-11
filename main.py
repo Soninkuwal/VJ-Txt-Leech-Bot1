@@ -288,7 +288,18 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
                 
             
             if "apps-s3-jw-prod.utkarshapp" in url:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-                cmd = f'yt-dlp -o "{name}.mp4" "{url}"'      
+                cmd = f'yt-dlp -o "{name}.mp4" "{url}"'  
+
+
+            if filename:
+                    # Get video information using ffprobe
+                           try:
+                               probe = ffmpeg.probe(filename)
+                               duration_seconds = float(probe["format"]["duration"])
+                               duration = time.strftime("%H:%M:%S", time.gmtime(duration_seconds))
+                               file_size = os.path.getsize(filename)
+                               file_size_mb = file_size / (1024 * 1024)
+                               
        
             elif "webvideos.classplusapp." in url:
                cmd = f'yt-dlp --add-header "referer:https://web.classplusapp.com/" --add-header "x-cdn-tag:empty" -f "{ytf}" "{url}" -o "{name}.mp4"'
@@ -328,14 +339,6 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
                     Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
-               if filename:
-                    # Get video information using ffprobe
-                           try:
-                               probe = ffmpeg.probe(filename)
-                               duration_seconds = float(probe["format"]["duration"])
-                               duration = time.strftime("%H:%M:%S", time.gmtime(duration_seconds))
-                               file_size = os.path.getsize(filename)
-                               file_size_mb = file_size / (1024 * 1024)
                     filename = res_file
                     await prog.delete(True)
                     await helper.send_vid(bot, m, cc, filename, thumb, name, prog)
