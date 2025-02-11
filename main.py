@@ -301,7 +301,7 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:❤️ @SONICKUWALSSCBOT ❤️** `{str(count).zfill(3)}. {name}{MR}.mkv`\n\n" f"**Quality:** `{res}`\n\n" f"**Duration:** `{duration}`\n\n" f"**𝔹ᴀᴛᴄʜ** » `{raw_text0}`\n\n" f"**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ `https://sonickuwalssc.blogspot.com/` **"'
+                cc = f'**[📽️] Vid_ID:❤️ @SONICKUWALSSCBOT ❤️** `{str(count).zfill(3)}. {name}{MR}.mkv`\n\n" f"**Quality:** `{res}`\n\n" f"**𝔹ᴀᴛᴄʜ** » `{raw_text0}`\n\n" f"**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ `https://sonickuwalssc.blogspot.com/` **"'
                 cc1 = f'**[📁] Pdf_ID:❤️ @SONICKUWALSSCBOT ❤️** `{str(count).zfill(3)}. {name}{MR}.pdf`\n\n**𝔹ᴀᴛᴄʜ** » `{raw_text0}`\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ `https://sonickuwalssc.blogspot.com/` **'
                 if "drive" in url:
                     try:
