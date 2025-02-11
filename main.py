@@ -330,12 +330,12 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
                     res_file = await helper.download_video(url, cmd, name)
                if filename:
                     # Get video information using ffprobe
-                    try:
-                        probe = ffmpeg.probe(filename)
-                        duration_seconds = float(probe["format"]["duration"])
-                        duration = time.strftime("%H:%M:%S", time.gmtime(duration_seconds))
-                        file_size = os.path.getsize(filename)
-                        file_size_mb = file_size / (1024 * 1024)
+                           try:
+                               probe = ffmpeg.probe(filename)
+                               duration_seconds = float(probe["format"]["duration"])
+                               duration = time.strftime("%H:%M:%S", time.gmtime(duration_seconds))
+                               file_size = os.path.getsize(filename)
+                               file_size_mb = file_size / (1024 * 1024)
                     filename = res_file
                     await prog.delete(True)
                     await helper.send_vid(bot, m, cc, filename, thumb, name, prog)
