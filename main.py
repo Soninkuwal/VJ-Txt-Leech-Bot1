@@ -290,6 +290,14 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
             if "apps-s3-jw-prod.utkarshapp" in url:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
                 cmd = f'yt-dlp -o "{name}.mp4" "{url}"'  
 
+            
+       
+            elif "webvideos.classplusapp." in url:
+               cmd = f'yt-dlp --add-header "referer:https://web.classplusapp.com/" --add-header "x-cdn-tag:empty" -f "{ytf}" "{url}" -o "{name}.mp4"'
+      
+            else:
+                cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
+
 
             if filename:
                     # Get video information using ffprobe
@@ -299,13 +307,7 @@ async def handle_txt_upload(bot: Client, m: Message, user_id: int):
                                duration = time.strftime("%H:%M:%S", time.gmtime(duration_seconds))
                                file_size = os.path.getsize(filename)
                                file_size_mb = file_size / (1024 * 1024)
-                               
-       
-            elif "webvideos.classplusapp." in url:
-               cmd = f'yt-dlp --add-header "referer:https://web.classplusapp.com/" --add-header "x-cdn-tag:empty" -f "{ytf}" "{url}" -o "{name}.mp4"'
-      
-            else:
-                cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
+                                           
 
             try:  
                 
