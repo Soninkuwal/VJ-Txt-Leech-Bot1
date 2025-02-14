@@ -43,7 +43,7 @@ bot = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN)
-auth_users = [7841292070,-1002260543763,-1002397220814,-1002461666553,-1002363453684]
+auth_users = [7841292070,123456796,-1002260543763,-1002397220814,-1002461666553,-1002363453684]
 
 
 @bot.on_message(filters.command(["start"]&(filters.chat(auth_users)))
