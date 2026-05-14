@@ -17,6 +17,12 @@ You can deploy this bot anywhere.
 
 <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/Soninkuwal/text-leech-kanha&branch=master&name=text-leech-kanha"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
 
+## Deploy To Google Colab
+
+<a href="https://colab.research.google.com/github.com/Soninkuwal/VJ-Txt-Leech-Bot1/blob/main/VJ-Txt-Leech-Bot1.ipynb" target="_blank">
+  <img src="https://ashutoshgoswami24.github.io/Me/img/gc.png" alt="Deploy To Google Colab" style="width:150px;"/>
+</a>
+
 
 <details><summary>Deploy To Heroku</summary>
 <p>
