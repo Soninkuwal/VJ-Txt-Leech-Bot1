@@ -19,7 +19,7 @@ You can deploy this bot anywhere.
 
 ## Deploy To Google Colab
 
-<a href="https://colab.research.google.com/github.com/Soninkuwal/VJ-Txt-Leech-Bot1/blob/main/VJ-Txt-Leech-Bot1.ipynb" target="_blank">
+<a href="https://colab.research.google.com/github/Soninkuwal/VJ-Txt-Leech-Bot1/blob/main/VJ-Txt-Leech-Bot1.ipynb" target="_blank">
   <img src="https://ashutoshgoswami24.github.io/Me/img/gc.png" alt="Deploy To Google Colab" style="width:150px;"/>
 </a>
 
